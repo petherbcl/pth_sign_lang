@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+
+    /*background-image: url('background.jpg');*/
+}
+
+.text_box_container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    width: 50vh;
+    padding: 1vh 0.5vw;
+
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.text_box_container .top_title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0.5vw;
+    height: 15%;
+    width: 100%;
+    padding: 0 1vw;
+}
+
+.text_box_container .top_title img{
+    height: 100%;
+}
+
+.text_box_container .text_container{
+    height: 70%;
+    width: 100%;
+    padding: 0.5vh 0 1vh;
+}
+
+.text_box_container .text_container textarea{
+    height: 100%;
+    width: 100%;
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+
+.text_box_container .button_container{
+    position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 15%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.button_container .btn{
+    position: relative;
+    height: 100%;
+    width: 25%;
+    cursor: pointer;
+}
+
+.button_container .btn a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	padding: 10px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	color: #fff;
+	z-index: 1;
+	transition: 0.5s;
+}
+
+.button_container .btn a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	transform: skewX(45deg) translate(0);
+	transition: 0.5s;
+}
+.button_container .btn:hover a::before {
+	transform: skewX(45deg) translate(200px);
+}
+.button_container .btn::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	bottom: -5px;
+	width: 30px;
+	height: 10px;
+	background: #f00;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+.button_container .btn:hover::before /*lightup button*/ {
+	bottom: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+
+.button_container .btn::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	top: -5px;
+	width: 30px;
+	height: 10px;
+	background: #f00;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+.button_container .btn:hover::after /*lightup button*/ {
+	top: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+.button_container .btn::before, /*chnage 1*/
+.button_container .btn::after {
+	background: #ff1f71;
+	box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
+		0 0 60px #ff1f71;
+}
+
+.button_container .btn a i{
+    margin-right: 0.5vw;
+}
+
+.isDisable{
+    display: none !important;
+}

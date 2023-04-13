@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body class="isDisable">
+
+    <div class="text_box_container">
+        <div class="top_title"> <img src="img/sign.png"> <span>Write the text</span> </div>
+        <div class="text_container">
+            <textarea id="textToRead"></textarea>
+        </div>
+        <div class="button_container">
+            <div class="btn" onclick="sendTextToRead()"><a><i class="fa-solid fa-microphone"></i> Read</a></div>
+        </div>
+    </div>
+
+
+
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+        integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- FONTAWESOME|ICONIFY -->
+    <script src="https://kit.fontawesome.com/058462cc51.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+    <script src="script.js" type="text/javascript"></script>
+
+</body>
+
+</html>
