@@ -27,8 +27,6 @@ body {
     
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
-
-    /*background-image: url('background.jpg');*/
 }
 
 .text_box_container{
@@ -41,7 +39,6 @@ body {
     width: 50vh;
     padding: 1vh 0.5vw;
 
-    /* From https://css.glass */
     background: rgba(0, 0, 0, 0.75);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -148,7 +145,7 @@ body {
 	transition: 0.5s;
 	transition-delay: 0.5;
 }
-.button_container .btn:hover::before /*lightup button*/ {
+.button_container .btn:hover::before {
 	bottom: 0;
 	height: 50%;
 	width: 80%;
@@ -168,13 +165,13 @@ body {
 	transition: 0.5s;
 	transition-delay: 0.5;
 }
-.button_container .btn:hover::after /*lightup button*/ {
+.button_container .btn:hover::after{
 	top: 0;
 	height: 50%;
 	width: 80%;
 	border-radius: 30px;
 }
-.button_container .btn::before, /*chnage 1*/
+.button_container .btn::before,
 .button_container .btn::after {
 	background: #ff1f71;
 	box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
